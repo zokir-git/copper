@@ -1,0 +1,46 @@
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// SMALL
+
+@media (min-width: 576px) and (max-width: 766.99px) {
+  .container {
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+// MEDIUM
+
+@media (min-width: 767px) and (max-width: 991.98px) {
+  .container {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+//   LARGE
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+// X-LARGE
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
