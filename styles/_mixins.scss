@@ -1,7 +1,19 @@
-@mixin font($style, $weight, $size) {
+@mixin font($style, $weight, $size, $color) {
   font-style: $style;
   font-weight: $weight;
   font-size: $size;
+  color: $color;
+}
+
+// @mixin player {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+@mixin dplayer($display: flex, $justify: space-between, $align: center) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
 }
 
 %common-font-1 {
@@ -15,4 +27,3 @@
   font-weight: 600;
   font-size: 30px;
 }
-

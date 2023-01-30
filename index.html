@@ -7,11 +7,101 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/main.css" />
     <title>Copper</title>
   </head>
-  <body></body>
+  <body>
+    <div class="main__hero">
+
+      <span onclick="menuBar" class="mobile__menu">
+        <img src="./images/menu__image.svg" alt="menue image" width="20" height="20">
+      </span>
+      <div class="container">
+        <header class="main__header">
+          <a href="#"
+            ><img
+              class="web__brand"
+              src="./images/site-logo.svg"
+              alt="Website logo"
+              width="160"
+              height="43"
+          /></a>
+
+          <nav class="main__nav">
+            <ul class="main__nav-list">
+              <li class="nav__item"><a href="#">Каталог</a></li>
+              <li class="nav__item"><a href="#">Новости</a></li>
+              <li class="nav__item"><a href="#">Доставка</a></li>
+              <li class="nav__item"><a href="#">O нас</a></li>
+              <li class="nav__item"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="contact__box">
+          <a href="#" class="heart__logo"
+            ><img
+              src="./images/heart.svg"
+              alt="hear logo "
+              width="30"
+              height="26"
+          /></a>
+          <a href="#" class="user__logo"
+            ><img
+              src="./images/user.svg"
+              alt="hear logo "
+              width="30"
+              height="26"
+          /></a>
+          <a href="#" class="shopping__logo"
+            ><img
+              src="./images/shopping-cart.svg"
+              alt="hear logo "
+              width="30"
+              height="26"
+          /></a>
+        </div>
+      </div>
+
+      <div class="main__page__titeles-wrapper">
+        <div class="container">
+          <h1 class="main__page-titel">Хит продаж</h1>
+
+          <span class="white__line"></span>
+
+          <div class="product__content">
+            <p class="main__page-product-name">
+              Дистиллятор для <br />
+              эфирных масел
+            </p>
+            <div class="product__price-block">
+              <span class="price_text">Цена</span>
+              <span class="price_amount">4 906 грн</span>
+            </div>
+            <button class="main__btn" type="button">Купить</button>
+          </div>
+
+          <div class="current__page-box">
+            <span class="pages current__page"></span>
+            <span class="pages"></span>
+            <span class="pages"></span>
+
+            <div class="page__indicator">
+              <span class="verticall__line"></span>
+              <br>
+              <img
+                src="./images/mouse.svg"
+                alt="Mouse image"
+                width="12"
+                height="18"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

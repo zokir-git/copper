@@ -1,0 +1,176 @@
+@import "./mixins";
+.main__hero {
+  height: 731px;
+  background-image: url(../images/main_image.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  .mobile__menu {
+    padding: 0.2rem 1.2rem 0rem 10px;
+    display: inline-block;
+    background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 3.4rem;
+  }
+}
+
+.main__hero::before {
+  content: "";
+  background-image: url(../images/left-vector.svg);
+  background-repeat: no-repeat;
+  background-size: 28px 17px;
+  background-position: right 10px bottom 8px;
+  border: 1px solid #fff;
+  border-left: none;
+  // width: 50px;
+  // height: 25px;
+  display: inline-block;
+  padding: 15px 30px;
+  position: absolute;
+
+  top: 350px;
+  cursor: pointer;
+}
+
+.main__hero::after {
+  content: "";
+  background-image: url(../images/right-vector.svg);
+  background-repeat: no-repeat;
+  background-size: 28px 17px;
+  background-position: left 10px bottom 8px;
+  border: 1px solid #fff;
+  border-right: none;
+  // width: 50px;
+  // height: 25px;
+  display: inline-block;
+  padding: 15px 30px;
+  position: absolute;
+
+  top: 350px;
+  right: 0;
+  cursor: pointer;
+}
+
+.main__header {
+  padding: 40px 0;
+  @include dplayer($display: flex, $justify: flex-start, $align: center);
+
+  .main__nav-list {
+    @include dplayer;
+  }
+}
+
+.main__nav {
+  margin-left: 77px;
+
+  .nav__item {
+    margin: 0 15px;
+
+    a {
+      @include font($style: normal, $weight: 400, $size: 1rem, $color: #fff);
+      padding: 0.3rem 0.5rem;
+    }
+    a:hover {
+      text-decoration-line: underline;
+      background: linear-gradient(92.09deg, #5e3928 -79.4%, #e4a16f 84.12%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+}
+
+.contact__box {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  a {
+    background-color: #fff;
+    display: inline-block;
+    height: 60px;
+    padding: 45px 10px;
+    margin: 0 10px;
+
+    img {
+      position: relative;
+      top: 10px;
+    }
+  }
+}
+
+.main__page__titeles-wrapper {
+  margin-top: 50px;
+  .main__page-titel {
+    font-family: "Lighthaus";
+    letter-spacing: 16px;
+    @include font($style: normal, $weight: 300, $size: 90px, $color: #fff);
+  }
+
+  .white__line {
+    display: inline-block;
+    width: 623px;
+    height: 1.6px;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.05)
+    );
+    margin: 20px 0;
+  }
+
+  .product__content {
+    .main__page-product-name {
+      @include font($style: normal, $weight: 700, $size: 40px, $color: #fff);
+    }
+    .product__price-block {
+      margin: 20px 0;
+      .price_text {
+        @include font($style: normal, $weight: 300, $size: 20px, $color: #fff);
+      }
+
+      .price_amount {
+        margin-left: 109px;
+        @include font($style: normal, $weight: 700, $size: 20px, $color: #fff);
+      }
+    }
+    .main__btn {
+      padding: 0.7rem 7rem;
+      background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+      @include font($style: normal, $weight: 700, $size: 18px, $color: #fff);
+    }
+  }
+}
+
+.current__page-box {
+  margin-top: 30px;
+  .pages {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+
+    margin-right: 10px;
+  }
+  .current__page {
+    background: linear-gradient(65.81deg, #5e3928 -24.09%, #e4a16f 104.02%);
+  }
+}
+
+.page__indicator {
+  margin-top: 40px;
+  .verticall__line {
+    display: inline-block;
+    width: 1px;
+    height: 32px;
+    background-color: #fff;
+
+    margin-bottom: 10px;
+    margin-left: 6px;
+  }
+}

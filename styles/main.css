@@ -10,13 +10,12 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-ul {
-  list-style: none;
+a {
+  text-decoration: none;
 }
 
-img {
-  width: 100%;
-  height: auto;
+ul {
+  list-style: none;
 }
 
 button {
@@ -29,18 +28,300 @@ input {
   background-color: transparent;
 }
 
+.main__hero {
+  height: 731px;
+  background-image: url(../images/main_image.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.main__hero .mobile__menu {
+  padding: 0.2rem 1.2rem 0rem 10px;
+  display: inline-block;
+  background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 3.4rem;
+}
+
+.main__hero::before {
+  content: "";
+  background-image: url(../images/left-vector.svg);
+  background-repeat: no-repeat;
+  background-size: 28px 17px;
+  background-position: right 10px bottom 8px;
+  border: 1px solid #fff;
+  border-left: none;
+  display: inline-block;
+  padding: 15px 30px;
+  position: absolute;
+  top: 350px;
+  cursor: pointer;
+}
+
+.main__hero::after {
+  content: "";
+  background-image: url(../images/right-vector.svg);
+  background-repeat: no-repeat;
+  background-size: 28px 17px;
+  background-position: left 10px bottom 8px;
+  border: 1px solid #fff;
+  border-right: none;
+  display: inline-block;
+  padding: 15px 30px;
+  position: absolute;
+  top: 350px;
+  right: 0;
+  cursor: pointer;
+}
+
+.main__header {
+  padding: 40px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main__header .main__nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__nav {
+  margin-left: 77px;
+}
+.main__nav .nav__item {
+  margin: 0 15px;
+}
+.main__nav .nav__item a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.3rem 0.5rem;
+}
+.main__nav .nav__item a:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  background: linear-gradient(92.09deg, #5e3928 -79.4%, #e4a16f 84.12%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contact__box {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.contact__box a {
+  background-color: #fff;
+  display: inline-block;
+  height: 60px;
+  padding: 45px 10px;
+  margin: 0 10px;
+}
+.contact__box a img {
+  position: relative;
+  top: 10px;
+}
+
+.main__page__titeles-wrapper {
+  margin-top: 50px;
+}
+.main__page__titeles-wrapper .main__page-titel {
+  font-family: "Lighthaus";
+  letter-spacing: 16px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 90px;
+  color: #fff;
+}
+.main__page__titeles-wrapper .white__line {
+  display: inline-block;
+  width: 623px;
+  height: 1.6px;
+  background: linear-gradient(90deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.05));
+  margin: 20px 0;
+}
+.main__page__titeles-wrapper .product__content .main__page-product-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+}
+.main__page__titeles-wrapper .product__content .product__price-block {
+  margin: 20px 0;
+}
+.main__page__titeles-wrapper .product__content .product__price-block .price_text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff;
+}
+.main__page__titeles-wrapper .product__content .product__price-block .price_amount {
+  margin-left: 109px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
+.main__page__titeles-wrapper .product__content .main__btn {
+  padding: 0.7rem 7rem;
+  background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+
+.current__page-box {
+  margin-top: 30px;
+}
+.current__page-box .pages {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  margin-right: 10px;
+}
+.current__page-box .current__page {
+  background: linear-gradient(65.81deg, #5e3928 -24.09%, #e4a16f 104.02%);
+}
+
+.page__indicator {
+  margin-top: 40px;
+}
+.page__indicator .verticall__line {
+  display: inline-block;
+  width: 1px;
+  height: 32px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  margin-left: 6px;
+}
+
 .container {
   max-width: 1140px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
 }
 
+@media (min-width: 320px) and (max-width: 576px) {
+  .container {
+    max-width: 290px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main__hero {
+    height: 729px;
+    background-image: url(../images/mobile-image.png);
+    background-repeat: no-repeat;
+  }
+  .main__header .web__brand {
+    width: 115px;
+    height: 31px;
+  }
+  .main__header .main__nav {
+    display: none;
+  }
+  .contact__box {
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+  .contact__box .heart__logo,
+.contact__box .user__logo {
+    padding: 45px 5px;
+    margin: 5px;
+  }
+  .contact__box .shopping__logo {
+    display: none;
+  }
+  .main__hero::after,
+.main__hero::before {
+    content: " ";
+    display: none;
+  }
+  .main__page__titeles-wrapper {
+    margin-top: 55px;
+  }
+  .main__page__titeles-wrapper .main__page-titel {
+    font-family: "Lighthaus";
+    letter-spacing: 10px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #fff;
+  }
+  .main__page__titeles-wrapper .white__line {
+    display: inline-block;
+    width: 198px;
+    height: 1.6px;
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.05));
+    margin: 20px 0;
+  }
+  .main__page__titeles-wrapper .product__content .main__page-product-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+  }
+  .main__page__titeles-wrapper .product__content .product__price-block {
+    margin: 20px 0;
+  }
+  .main__page__titeles-wrapper .product__content .product__price-block .price_text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #fff;
+  }
+  .main__page__titeles-wrapper .product__content .product__price-block .price_amount {
+    margin-left: 49px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1rem;
+    color: #fff;
+  }
+  .main__page__titeles-wrapper .product__content .main__btn {
+    margin-top: 40px;
+    padding: 0.8rem 3rem;
+    background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+  }
+  .main__page__titeles-wrapper .current__page-box {
+    margin-top: 100px;
+  }
+  .main__page__titeles-wrapper .page__indicator {
+    margin-top: 78px;
+  }
+}
 @media (min-width: 576px) and (max-width: 766.99px) {
   .container {
     max-width: 540px;
     width: 100%;
     margin: 0 auto;
+  }
+  .mobile__menu {
+    display: none !important;
+  }
+  .main__hero::after,
+.main__hero::before {
+    content: " ";
+    display: none;
+  }
+  .main__header .web__brand {
+    width: 115px;
+    height: 31px;
+  }
+  .main__header .main__nav {
+    display: none;
   }
 }
 @media (min-width: 767px) and (max-width: 991.98px) {
@@ -49,6 +330,77 @@ input {
     width: 100%;
     margin: 0 auto;
   }
+  .mobile__menu {
+    display: none !important;
+  }
+  .main__hero {
+    height: 812px;
+    background-image: url(../images/tablet__image.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .main__hero::after,
+.main__hero::before {
+    content: " ";
+    display: none;
+  }
+  .main__header {
+    display: block;
+  }
+  .main__header .main__nav {
+    margin-top: 50px;
+  }
+  .main__page__titeles-wrapper {
+    margin-top: 110px;
+  }
+  .main__page__titeles-wrapper .main__page-titel {
+    font-family: "Lighthaus";
+    letter-spacing: 16px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    color: #fff;
+  }
+  .main__page__titeles-wrapper .white__line {
+    display: inline-block;
+    width: 388px;
+    height: 1.6px;
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.05));
+    margin: 20px 0;
+  }
+  .main__page__titeles-wrapper .product__content .main__page-product-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+  }
+  .main__page__titeles-wrapper .product__content .product__price-block {
+    margin: 20px 0;
+  }
+  .main__page__titeles-wrapper .product__content .product__price-block .price_text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+  }
+  .main__page__titeles-wrapper .product__content .product__price-block .price_amount {
+    margin-left: 109px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+  }
+  .main__page__titeles-wrapper .product__content .main__btn {
+    padding: 0.7rem 5rem;
+    background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+  }
+  .main__page__titeles-wrapper .page__indicator {
+    margin-top: 98px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .container {
@@ -56,11 +408,19 @@ input {
     width: 100%;
     margin: 0 auto;
   }
+  .mobile__menu {
+    display: none !important;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .container {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
+  }
+  .mobile__menu {
+    display: none !important;
+    color: red;
+    background-color: red;
   }
 }/*# sourceMappingURL=main.css.map */
